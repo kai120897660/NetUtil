@@ -9,7 +9,7 @@
 import UIKit
 import Moya
 
-enum BaseApi {
+public enum BaseApi {
     case get(_ param: Any?, _ url: String)
     case post(_ param: Any?, _ url: String)
     case delete(_ param: Any?, _ url: String)

@@ -10,7 +10,7 @@ import UIKit
 import Moya
 import RxSwift
 
-class MoyaManager {
+public class MoyaManager {
     
     public typealias Prepare = () -> Void
     ///网络请求host

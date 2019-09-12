@@ -9,7 +9,11 @@
 import UIKit
 import HandyJSON
 
-struct ResultModel: HandyJSON {
+public struct ResultModel: HandyJSON {
+    
+    public init() {
+        
+    }
     
     public var code: Int!
     public var data: Any!

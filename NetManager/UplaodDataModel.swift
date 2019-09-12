@@ -9,7 +9,7 @@
 import UIKit
 
 
-class UplaodDataModel {
+public class UplaodDataModel {
     
     ///图片名称
     public var name : String = "file"
