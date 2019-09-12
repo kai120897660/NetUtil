@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
                       this project is net manager for moya   
                    DESC
 
-  spec.homepage     = "https://github.com/kai120897660/CKUtils"
+  spec.homepage     = "https://github.com/kai120897660/NetUtil"
 
   spec.license      = "MIT"
   spec.license      = { :type => "MIT", :file => "LICENSE" }

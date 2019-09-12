@@ -19,7 +19,7 @@ public class MoyaManager {
     ///请求头参数
     public var headerParams: [String: String] = [:]
     
-    static let shareinstaned = MoyaManager()
+    public static let shareinstaned = MoyaManager()
     
     private let provider = MoyaProvider<BaseApi>()
     
