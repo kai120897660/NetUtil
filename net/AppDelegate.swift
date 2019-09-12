@@ -7,15 +7,27 @@
 //
 
 import UIKit
+import RxSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    private let disposeBag = DisposeBag()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        MoyaManager.shareinstaned.HTTPHost = "https://www.zz-w.cn/ibox/"
+        let url = "/unifiedLogin"
+        let params = ["loginName": "100006", "userPwd": "A1234567".data(using: .utf8)?.base64EncodedString() ?? "", "type": "2"]
+//        let url = "/user/login/account"
+//        let params = ["account": "19000000012", "password": "q123456"]
+        MoyaManager.requestDatas(api: .post(params, url), prepare: nil)
+            .subscribe(onNext: { (rs) in
+                ck_print(rs)
+            }).disposed(by: self.disposeBag)
+        
         return true
     }
 
