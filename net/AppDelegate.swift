@@ -18,6 +18,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.DBTest()
+        
+        return true
+    }
+    
+    func DBTest() {
+//        DBManager.standard.updateDB()
+//        let test = TestModel.init(name: "李四", age: "18")
+//        test.synchronizeDB(nil)
+//        TestModel.deleteDB(["name": "张三"]) {
+//            
+//        }
+        var model = TestModel.selectModel(["age": "18"]).first as! TestModel
+        model.name = "阿布"
+        model.updateDB(nil)
+        TestModel.selectModel(["age": "18"])
+        
+//        TestModel.getClass()
+//        TestModel().getClass()
+//        TestModel.ck_initTable()
+    }
+    
+    func moyaTest()  {
 //        MoyaManager.shareinstaned.HTTPHost = "https://www.zz-w.cn/ibox/"
 //        let url = "/unifiedLogin"
 //        let params = ["loginName": "100006", "userPwd": "A1234567".data(using: .utf8)?.base64EncodedString() ?? "", "type": "2"]
@@ -27,8 +51,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .subscribe(onNext: { (rs) in
                 ck_print(rs)
             }).disposed(by: self.disposeBag)
-        
-        return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

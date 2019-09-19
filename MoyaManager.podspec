@@ -3,8 +3,8 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "MoyaManager"
-  spec.version      = "1.1.1"
-  spec.summary      = "net swif"
+  spec.version      = "1.1.2"
+  spec.summary      = "net swift"
   spec.description  = <<-DESC
                       this project is net manager for moya   
                    DESC

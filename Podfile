@@ -10,5 +10,7 @@ target 'net' do
   pod 'Moya/RxSwift',     '~> 13.0'
   
   pod 'HandyJSON',        '~> 5.0'
+  
+  pod 'FMDB'
 
 end
