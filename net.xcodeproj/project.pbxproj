@@ -8,14 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A0A01D73969938D43DFC0474 /* Pods_net.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56B0318573B4AA483470560 /* Pods_net.framework */; };
-		C3B0DC81232F6CF40078952A /* PathUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B0DC7F232F6CF40078952A /* PathUtil.swift */; };
-		C3B0DC82232F6CF40078952A /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B0DC80232F6CF40078952A /* DBManager.swift */; };
-		C3B0DC84232F6D130078952A /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B0DC83232F6D130078952A /* BaseModel.swift */; };
+		C3A07E1C2334C3B5004A82B5 /* UplaodDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A07E182334C3B4004A82B5 /* UplaodDataModel.swift */; };
+		C3A07E1D2334C3B5004A82B5 /* MoyaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A07E192334C3B4004A82B5 /* MoyaManager.swift */; };
+		C3A07E1E2334C3B5004A82B5 /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A07E1A2334C3B4004A82B5 /* BaseApi.swift */; };
+		C3A07E1F2334C3B5004A82B5 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A07E1B2334C3B4004A82B5 /* ResultModel.swift */; };
 		C3B0DC86232F8E840078952A /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B0DC85232F8E840078952A /* TestModel.swift */; };
-		C3B0DC882330E9520078952A /* FieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B0DC872330E9520078952A /* FieldModel.swift */; };
-		C3B0DC8A2330E9870078952A /* FieldData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B0DC892330E9870078952A /* FieldData.swift */; };
-		C3B0DC8C2330EA520078952A /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B0DC8B2330EA520078952A /* Manager.swift */; };
-		C3B0DC8E2332246A0078952A /* ModelOpreateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B0DC8D2332246A0078952A /* ModelOpreateUtil.swift */; };
 		C3BAD4BB2329E9F200045286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAD4BA2329E9F200045286 /* AppDelegate.swift */; };
 		C3BAD4BD2329E9F200045286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAD4BC2329E9F200045286 /* ViewController.swift */; };
 		C3BAD4C02329E9F200045286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BAD4BE2329E9F200045286 /* Main.storyboard */; };
@@ -23,10 +20,6 @@
 		C3BAD4C52329E9F200045286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BAD4C32329E9F200045286 /* LaunchScreen.storyboard */; };
 		C3BAD4D02329E9F200045286 /* netTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAD4CF2329E9F200045286 /* netTests.swift */; };
 		C3BAD4DB2329E9F300045286 /* netUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAD4DA2329E9F300045286 /* netUITests.swift */; };
-		C3BAD4EB2329EAF000045286 /* MoyaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAD4EA2329EAF000045286 /* MoyaManager.swift */; };
-		C3BAD4ED2329EB5200045286 /* UplaodDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAD4EC2329EB5200045286 /* UplaodDataModel.swift */; };
-		C3BAD4F12329EF5500045286 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAD4F02329EF5500045286 /* ResultModel.swift */; };
-		C3BAD4F32329F2FB00045286 /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAD4F22329F2FB00045286 /* BaseApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,15 +42,11 @@
 /* Begin PBXFileReference section */
 		7D6751A7C8801A43AA03DEF1 /* Pods-net.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-net.release.xcconfig"; path = "Target Support Files/Pods-net/Pods-net.release.xcconfig"; sourceTree = "<group>"; };
 		9BC7657659C0C233692EDF7F /* Pods-net.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-net.debug.xcconfig"; path = "Target Support Files/Pods-net/Pods-net.debug.xcconfig"; sourceTree = "<group>"; };
-		C3B0DC7B232F6C990078952A /* DB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DB-Bridging-Header.h"; sourceTree = "<group>"; };
-		C3B0DC7F232F6CF40078952A /* PathUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathUtil.swift; sourceTree = "<group>"; };
-		C3B0DC80232F6CF40078952A /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
-		C3B0DC83232F6D130078952A /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		C3A07E182334C3B4004A82B5 /* UplaodDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UplaodDataModel.swift; sourceTree = "<group>"; };
+		C3A07E192334C3B4004A82B5 /* MoyaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaManager.swift; sourceTree = "<group>"; };
+		C3A07E1A2334C3B4004A82B5 /* BaseApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseApi.swift; sourceTree = "<group>"; };
+		C3A07E1B2334C3B4004A82B5 /* ResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
 		C3B0DC85232F8E840078952A /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
-		C3B0DC872330E9520078952A /* FieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldModel.swift; sourceTree = "<group>"; };
-		C3B0DC892330E9870078952A /* FieldData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldData.swift; sourceTree = "<group>"; };
-		C3B0DC8B2330EA520078952A /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
-		C3B0DC8D2332246A0078952A /* ModelOpreateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelOpreateUtil.swift; sourceTree = "<group>"; };
 		C3BAD4B72329E9F200045286 /* net.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = net.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BAD4BA2329E9F200045286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3BAD4BC2329E9F200045286 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,10 +60,6 @@
 		C3BAD4D62329E9F300045286 /* netUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = netUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BAD4DA2329E9F300045286 /* netUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = netUITests.swift; sourceTree = "<group>"; };
 		C3BAD4DC2329E9F300045286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3BAD4EA2329EAF000045286 /* MoyaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaManager.swift; sourceTree = "<group>"; };
-		C3BAD4EC2329EB5200045286 /* UplaodDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UplaodDataModel.swift; sourceTree = "<group>"; };
-		C3BAD4F02329EF5500045286 /* ResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
-		C3BAD4F22329F2FB00045286 /* BaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApi.swift; sourceTree = "<group>"; };
 		E56B0318573B4AA483470560 /* Pods_net.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_net.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,26 +106,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		C3B0DC7A232F6C830078952A /* BDManager */ = {
+		C3A07E172334C3B4004A82B5 /* NetManager */ = {
 			isa = PBXGroup;
 			children = (
-				C3B0DC7B232F6C990078952A /* DB-Bridging-Header.h */,
-				C3B0DC8B2330EA520078952A /* Manager.swift */,
-				C3B0DC80232F6CF40078952A /* DBManager.swift */,
-				C3B0DC7F232F6CF40078952A /* PathUtil.swift */,
-				C3B0DC83232F6D130078952A /* BaseModel.swift */,
-				C3B0DC872330E9520078952A /* FieldModel.swift */,
-				C3B0DC892330E9870078952A /* FieldData.swift */,
-				C3B0DC8D2332246A0078952A /* ModelOpreateUtil.swift */,
+				C3A07E182334C3B4004A82B5 /* UplaodDataModel.swift */,
+				C3A07E192334C3B4004A82B5 /* MoyaManager.swift */,
+				C3A07E1A2334C3B4004A82B5 /* BaseApi.swift */,
+				C3A07E1B2334C3B4004A82B5 /* ResultModel.swift */,
 			);
-			path = BDManager;
+			path = NetManager;
 			sourceTree = "<group>";
 		};
 		C3BAD4AE2329E9F200045286 = {
 			isa = PBXGroup;
 			children = (
-				C3B0DC7A232F6C830078952A /* BDManager */,
-				C3BAD4E92329EAD000045286 /* NetManager */,
+				C3A07E172334C3B4004A82B5 /* NetManager */,
 				C3BAD4B92329E9F200045286 /* net */,
 				C3BAD4CE2329E9F200045286 /* netTests */,
 				C3BAD4D92329E9F300045286 /* netUITests */,
@@ -190,17 +170,6 @@
 				C3BAD4DC2329E9F300045286 /* Info.plist */,
 			);
 			path = netUITests;
-			sourceTree = "<group>";
-		};
-		C3BAD4E92329EAD000045286 /* NetManager */ = {
-			isa = PBXGroup;
-			children = (
-				C3BAD4F22329F2FB00045286 /* BaseApi.swift */,
-				C3BAD4EA2329EAF000045286 /* MoyaManager.swift */,
-				C3BAD4F02329EF5500045286 /* ResultModel.swift */,
-				C3BAD4EC2329EB5200045286 /* UplaodDataModel.swift */,
-			);
-			path = NetManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,20 +348,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B0DC8E2332246A0078952A /* ModelOpreateUtil.swift in Sources */,
-				C3B0DC8A2330E9870078952A /* FieldData.swift in Sources */,
-				C3B0DC84232F6D130078952A /* BaseModel.swift in Sources */,
-				C3B0DC81232F6CF40078952A /* PathUtil.swift in Sources */,
-				C3BAD4F32329F2FB00045286 /* BaseApi.swift in Sources */,
-				C3BAD4ED2329EB5200045286 /* UplaodDataModel.swift in Sources */,
-				C3B0DC82232F6CF40078952A /* DBManager.swift in Sources */,
-				C3BAD4F12329EF5500045286 /* ResultModel.swift in Sources */,
-				C3B0DC8C2330EA520078952A /* Manager.swift in Sources */,
-				C3B0DC882330E9520078952A /* FieldModel.swift in Sources */,
+				C3A07E1C2334C3B5004A82B5 /* UplaodDataModel.swift in Sources */,
+				C3A07E1D2334C3B5004A82B5 /* MoyaManager.swift in Sources */,
 				C3BAD4BD2329E9F200045286 /* ViewController.swift in Sources */,
+				C3A07E1E2334C3B5004A82B5 /* BaseApi.swift in Sources */,
 				C3B0DC86232F8E840078952A /* TestModel.swift in Sources */,
+				C3A07E1F2334C3B5004A82B5 /* ResultModel.swift in Sources */,
 				C3BAD4BB2329E9F200045286 /* AppDelegate.swift in Sources */,
-				C3BAD4EB2329EAF000045286 /* MoyaManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,7 +539,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.net;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.utils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BDManager/DB-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -600,7 +562,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.net;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.utils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BDManager/DB-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

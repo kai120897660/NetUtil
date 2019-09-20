@@ -6,11 +6,10 @@ inhibit_all_warnings!
 
 target 'net' do
   # Comment the next line if you don't want to use dynamic frameworks
-  
   pod 'Moya/RxSwift',     '~> 13.0'
-  
-  pod 'HandyJSON',        '~> 5.0'
-  
+
+  pod 'HandyJSON'
+
   pod 'FMDB'
 
 end

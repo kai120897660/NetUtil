@@ -10,14 +10,29 @@ import UIKit
 import Moya
 import RxSwift
 
-public class MoyaManager {
+public protocol MoyaManagerDelegate {
     
+    func ck_requesetInvalid(_ rs: ResultModel?)
+    ///请求头参数
+    var headerParams: [String: String]! {get}
+    ///
+    var HTTPHost: String! {get}
+}
+
+public class MoyaManager {
+//extension MoyaManager {
+
     public typealias Prepare = () -> Void
     ///网络请求host
-    public var HTTPHost = "http://test-family-api.xiaomawang.com"
+    var HTTPHost: String! {
+        return self.delegate?.HTTPHost ?? ""
+    }
     
+    public var delegate: MoyaManagerDelegate?
     ///请求头参数
-    public var headerParams: [String: String] = [:]
+    var headerParams: [String: String]! {
+        return self.delegate?.headerParams
+    }
     
     public static let shareinstaned = MoyaManager()
     
@@ -44,6 +59,7 @@ public class MoyaManager {
                     return rst
                 default:
                     let rst = ResultModel.deserialize(from: data as? [String: Any])
+                    self.delegate?.ck_requesetInvalid(rst)
                     return rst
                 }
                 
