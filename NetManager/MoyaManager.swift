@@ -12,11 +12,11 @@ import RxSwift
 
 public protocol MoyaManagerDelegate {
     
-    func ck_requesetInvalid(_ rs: ResultModel?)
+    public func ck_requesetInvalid(_ rs: ResultModel?)
     ///请求头参数
-    var headerParams: [String: String]! {get}
-    ///
-    var HTTPHost: String! {get}
+    public var headerParams: [String: String]! {get}
+    ///请求服务器地址
+    public var HTTPHost: String! {get}
 }
 
 public class MoyaManager {

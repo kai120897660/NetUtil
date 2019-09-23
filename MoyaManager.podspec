@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "MoyaManager"
-  spec.version      = "1.1.3"
+  spec.version      = "1.2.1"
   spec.summary      = "net swift"
   spec.description  = <<-DESC
                       this project is net manager for moya   
@@ -22,8 +22,8 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/kai120897660/NetUtil.git", :tag => "#{spec.version}" }
 
 
-#  spec.source_files  = "NetManager"
-  spec.subspec "NetManager" do |ss|
+#  spec.source_files  = "NetManage"
+  spec.subspec "NetManage" do |ss|
     ss.source_files = "NetManager"
     ss.dependency "Moya/RxSwift",     "~> 13.0"
     ss.dependency "HandyJSON",        "~> 5.0"
