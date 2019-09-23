@@ -25,20 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func DBTest() {
-//        DBManager.standard.updateDB()
-//        let test = TestModel.init(name: "李四", age: "18")
-//        test.synchronizeDB(nil)
-//        TestModel.deleteDB(["name": "张三"]) {
-//            
-//        }
-        var model = TestModel.selectModel(["age": "18"]).first as! TestModel
-        model.name = "阿布"
-        model.updateDB(nil)
-        TestModel.selectModel(["age": "18"])
         
-//        TestModel.getClass()
-//        TestModel().getClass()
-//        TestModel.ck_initTable()
     }
     
     func moyaTest()  {

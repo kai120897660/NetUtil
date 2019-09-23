@@ -7,33 +7,3 @@
 //
 
 import UIKit
-
-struct TestModel: CKDBManager {
-    
-    var name: String!
-    
-    var age: String!
-    
-//    var brithday: [String]!
-    
-    static func getClass() {
-        let mirror = Mirror.init(reflecting: self)
-        let type = mirror.subjectType
-        ck_print(type)
-    }
-    
-    func getClass() {
-        let mirror = Mirror.init(reflecting: self)
-        let type = mirror.subjectType
-        ck_print(type)
-        
-    }
-    
-    static func ck_tableName() -> String {
-      return "Test"
-    }
-    
-//    static func ck_ignoresProperties() -> [String]? {
-//        return ["brithday"]
-//    }
-}
